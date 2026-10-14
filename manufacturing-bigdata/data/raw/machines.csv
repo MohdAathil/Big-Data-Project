@@ -1,0 +1,5 @@
+machine_id,machine_type,capacity_units_per_hour,efficiency,operating_cost_per_hour,supported_products
+M001,CNC,70,0.92,48,P001|P003|P005
+M002,ASSEMBLY,90,0.88,35,P001|P002|P004
+M003,ELECTRONICS,110,0.95,42,P002|P004|P005
+M004,MIXED,55,0.84,30,P001|P003|P004

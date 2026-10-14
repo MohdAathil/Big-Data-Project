@@ -1,0 +1,5 @@
+maintenance_id,machine_id,maintenance_type,start_time,end_time,reason,severity
+MNT0000,M001,PREVENTIVE,2026-10-09 20:00:00,2026-10-09 22:00:00,Scheduled service,MEDIUM
+MNT0001,M002,PREVENTIVE,2026-10-10 20:00:00,2026-10-10 22:00:00,Scheduled service,MEDIUM
+MNT0002,M003,PREVENTIVE,2026-10-11 20:00:00,2026-10-11 22:00:00,Scheduled service,MEDIUM
+MNT0003,M004,PREVENTIVE,2026-10-12 20:00:00,2026-10-12 22:00:00,Scheduled service,MEDIUM

@@ -1,0 +1,26 @@
+services:
+  api:
+    build: .
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000
+    ports: ["8000:8000"]
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://manufacturing:manufacturing@postgres:5432/manufacturing
+    depends_on: [postgres]
+  dashboard:
+    build: .
+    command: streamlit run dashboard/app.py --server.address 0.0.0.0 --server.port 8501
+    ports: ["8501:8501"]
+    environment:
+      API_BASE_URL: http://api:8000
+    depends_on: [api]
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: manufacturing
+      POSTGRES_USER: manufacturing
+      POSTGRES_PASSWORD: manufacturing
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data", "./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro"]
+volumes:
+  pgdata:

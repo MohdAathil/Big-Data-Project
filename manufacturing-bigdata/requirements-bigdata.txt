@@ -1,0 +1,5 @@
+# Install only when enabling the distributed deployment integrations.
+pyspark>=3.5
+kafka-python>=2.0
+ortools>=9.8
+psycopg[binary]>=3.1

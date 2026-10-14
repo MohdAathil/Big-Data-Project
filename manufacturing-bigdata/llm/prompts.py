@@ -1,0 +1,1 @@
+EVENT_EXTRACTION_PROMPT = """Use only supplied article text. Do not fabricate facts. Identify relevant products/categories. Distinguish demand impact from supply impact. Return schema-valid structured output, assign confidence, identify uncertainty, preserve source URL and date. Never invent numerical demand forecasts and never create production schedules."""

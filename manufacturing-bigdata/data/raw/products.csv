@@ -1,0 +1,6 @@
+product_id,product_name,category,processing_time_minutes,setup_time_minutes,required_material,material_per_unit
+P001,Drive Module,ELECTRONICS,42,18,copper,2.0
+P002,Control Unit,ELECTRONICS,35,15,circuit_board,1.0
+P003,Pump Assembly,MECHANICAL,55,22,steel,4.5
+P004,Sensor Pack,ELECTRONICS,24,12,silicon,0.4
+P005,Valve Kit,MECHANICAL,30,16,aluminum,1.8

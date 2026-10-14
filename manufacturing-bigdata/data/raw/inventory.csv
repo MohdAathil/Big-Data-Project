@@ -1,0 +1,6 @@
+product_id,warehouse_id,current_stock,safety_stock,reorder_level,incoming_quantity,reserved_quantity
+P001,WH1,614,100,120,106,19
+P002,WH1,454,100,120,74,11
+P003,WH1,633,100,120,169,17
+P004,WH1,192,100,120,6,15
+P005,WH1,473,100,120,191,26
